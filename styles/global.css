@@ -32,7 +32,6 @@ body {
 #logoBlock {
     display: flex;
     align-items: center;
-    margin-bottom: 4pt;
 }
 
 #titleBlock {
