@@ -1,0 +1,115 @@
+:root {
+    --babyPowder: #F5F6F3;
+    --frenchGrey: #D0D4DD;
+    --richBlack: #0F0F1A;
+    --pennBlue: #001A52;
+    --bigTextUnit: 26pt;
+    --mediumTextUnit: 18pt;
+    --smallTextUnit: 12pt;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: var(--babyPowder);
+    color: var(--richBlack);
+}
+
+#mainNavOuter {
+    height: 100px;
+    border-bottom: 3px solid var(--richBlack);
+    display: flex;
+    align-items: center;
+}
+
+#mainNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4pt;
+}
+
+#titleBlock {
+    margin-left: 12pt;
+    height: 100%;
+}
+
+.mainTitle {
+    font-size: var(--bigTextUnit);
+    margin: 0;
+    margin-left: 6pt;
+}
+
+.crimson-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+
+
+.mainSubTitle {
+    font-size: var(--smallTextUnit);
+    margin: 0;
+}
+
+.navLinks {
+    font-size: var(--smallTextUnit);
+    color: var(--richBlack);
+    text-decoration: none;
+    margin-right: 12pt;
+}
+
+.navLinks:hover {
+    text-decoration: underline;
+}
+
+#desktopNav {
+    display: flex;
+    align-items: center;
+}
+
+#mobileNav {
+    display: none;
+}
+
+.navButton {
+    background-color: var(--richBlack);
+    color: var(--babyPowder);
+    font-size: var(--smallTextUnit);
+    margin-right: 12pt;
+    padding: 6pt 12pt;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+}
+
+.navButton:hover {
+    background-color: var(--pennBlue);
+    cursor: pointer;
+}
+
+
+
+/*Media Querries*/
+@media (max-width: 768px) {
+    #desktopNav {
+        display: none;
+    }
+    
+    #mobileNav {
+        display: flex;
+    }    
+}
