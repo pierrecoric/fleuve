@@ -17,22 +17,21 @@ const Nav = () => {
 
                 <div id="mainNav">
                     <div id="titleBlock">
-                        <div className="crimson-regular" id="logoBlock">
+                        <div id="logoBlock">
                             <Image
                                 src = "/assets/images/logo/logo_3.svg"
-                                width={20}
-                                height={20}
+                                width={55}
+                                height={55}
                                 alt="Fleuve-Logo"
                                 display="block"
                             />
-                            <div>
-                                <h1 className="mainTitle">Fleuve</h1>
-                            </div>
                         </div>
-
-                        <p className="mainSubTitle">
-                            /flœv/ mind mapping tool
-                        </p>
+                        <div className="crimson-regular">
+                            <h1 className="mainTitle">Fleuve</h1>
+                            <p className="mainSubTitle">
+                                /flœv/ mind mapping tool
+                            </p>
+                        </div>
                     </div>
 
                     {/*Desktop Nav*/}
