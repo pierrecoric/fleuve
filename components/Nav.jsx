@@ -19,7 +19,7 @@ const Nav = () => {
                     <div id="titleBlock">
                         <div className="crimson-regular" id="logoBlock">
                             <Image
-                                src = "/assets/images/logo.svg"
+                                src = "/assets/images/logo/logo_3.svg"
                                 width={20}
                                 height={20}
                                 alt="Fleuve-Logo"
