@@ -4,18 +4,20 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
+import { Slant as Hamburger } from 'hamburger-react'
 
 const Nav = () => {
 
-    const [toggleDropDown, setToggleDropDown] = useState(false);
+    const [isOpen, setOpen] = useState(false)
 
+    //temporary
     const userIsLoggedIn = false;
 
     return (
         <>
             <nav id="mainNavOuter">
-
                 <div id="mainNav">
+                    {/*Left block with the title and the logo*/}
                     <div id="titleBlock">
                         <div id="logoBlock">
                             <Image
@@ -26,42 +28,30 @@ const Nav = () => {
                                 display="block"
                             />
                         </div>
-                        <div className="crimson-regular">
+                        <div id="titleText" className="crimson-regular">
                             <h1 className="mainTitle">Fleuve</h1>
                             <p className="mainSubTitle">
-                                /flœv/ mind mapping tool
+                                /flœv/ mind-patterning
                             </p>
                         </div>
                     </div>
 
                     {/*Desktop Nav*/}
-                    <div id="desktopNav">
-                        <div className="lato-regular">
-                            <Link
-                                href="/"
-                                className="navLinks"
-                            >
-                                about
-                            </Link>
-                            <Link
-                                href="/"
-                                className="navLinks"
-                            >
-                                something
-                            </Link>
-                            <button
-                                className="navButton lato-regular"
-                            >
-                                sign-in
-                            </button>
-                        </div>
-                    </div>
-                    {/*Mobile Nav*/}
-                    <div id="mobileNav">
-                        lilililililili
+                    <div id="rightControls">
+                        <button
+                            className="navButton lato-regular"
+                        >
+                            sign-in
+                        </button>
+                            <Hamburger toggled={isOpen} 
+                                toggle={setOpen}
+                                label="Show menu"
+                                color="#161624"
+                            />
                     </div>
                 </div>
             </nav>
+            {isOpen? <div>open</div> : <div>close</div>}
         </>
     );
 }

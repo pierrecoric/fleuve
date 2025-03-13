@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --babyPowder: #F5F6F3;
     --frenchGrey: #D0D4DD;
-    --richBlack: #0F0F1A;
+    --richBlack: #161624;
     --pennBlue: #001A52;
     --bigTextUnit: 30pt;
     --mediumTextUnit: 18pt;
     --smallTextUnit: 12pt;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
     margin: 0;
@@ -31,10 +32,14 @@ body {
 
 
 #titleBlock {
-    margin-left: 12pt;
+    margin-left: 14pt;
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+#titleText {
+    margin-left: 4pt;
 }
 
 .mainTitle {
@@ -59,12 +64,8 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
     
-
-
-
-
 .navLinks {
     font-size: var(--smallTextUnit);
     color: var(--richBlack);
@@ -76,9 +77,10 @@ body {
     text-decoration: underline;
 }
 
-#desktopNav {
+#rightControls {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #mobileNav {
@@ -101,15 +103,16 @@ body {
     cursor: pointer;
 }
 
-
+.hamburger-react {
+    margin-right: 14pt;
+}
 
 /*Media Querries*/
-@media (max-width: 768px) {
-    #desktopNav {
+@media (max-width: 596px) {
+    #logoBlock{
         display: none;
     }
-    
-    #mobileNav {
-        display: flex;
-    }    
+    .mainSubTitle {
+        display: none;
+    }   
 }
