@@ -1,6 +1,7 @@
 import ReadTree from "@components/ReadTree";
 
-const Home = () => {
+const Home = async () => {
+    await new Promise ((resolve) => setTimeout(resolve, 500))
     return (
         <>
             <ReadTree />

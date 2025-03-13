@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('nav.css');
+@import url('not-found.css');
+
 
 :root {
     --babyPowder: #F5F6F3;
@@ -17,43 +20,6 @@ body {
     color: var(--richBlack);
 }
 
-#mainNavOuter {
-    height: 100px;
-    border-bottom: 3px solid var(--richBlack);
-    display: flex;
-    align-items: center;
-}
-
-#mainNav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-#titleBlock {
-    margin-left: 14pt;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#titleText {
-    margin-left: 4pt;
-}
-
-.mainTitle {
-    font-size: var(--bigTextUnit);
-    margin: 0;
-    margin-top: -4pt;
-}
-
-.mainSubTitle {
-    font-size: 14pt;
-    margin: 0;
-    margin-top: -6pt;
-}
-
 .crimson-regular {
     font-family: "Crimson Text", serif;
     font-weight: 400;
@@ -65,54 +31,17 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-    
-.navLinks {
-    font-size: var(--smallTextUnit);
+
+.text-medium {
+    font-size: var(--mediumTextUnit);
+}
+
+.simple-link {
     color: var(--richBlack);
     text-decoration: none;
-    margin-right: 12pt;
 }
 
-.navLinks:hover {
+.simple-link:hover {
+    color: var(--pennBlue);
     text-decoration: underline;
-}
-
-#rightControls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mobileNav {
-    display: none;
-}
-
-.navButton {
-    background-color: var(--richBlack);
-    color: var(--babyPowder);
-    font-size: var(--smallTextUnit);
-    margin-right: 16pt;
-    padding: 6pt 12pt;
-    text-decoration: none;
-    border-radius: 15px;
-    border: none;
-}
-
-.navButton:hover {
-    background-color: var(--pennBlue);
-    cursor: pointer;
-}
-
-.hamburger-react {
-    margin-right: 14pt;
-}
-
-/*Media Querries*/
-@media (max-width: 596px) {
-    #logoBlock{
-        display: none;
-    }
-    .mainSubTitle {
-        display: none;
-    }   
 }

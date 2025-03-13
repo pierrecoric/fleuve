@@ -25,7 +25,6 @@ const Nav = () => {
                                 width={55}
                                 height={55}
                                 alt="Fleuve-Logo"
-                                display="block"
                             />
                         </div>
                         <div id="titleText" className="crimson-regular">

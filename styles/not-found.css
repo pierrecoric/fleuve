@@ -1,0 +1,12 @@
+#NotFoundOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 128pt;
+}
+
+#NotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

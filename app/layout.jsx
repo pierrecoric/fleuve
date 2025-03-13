@@ -2,6 +2,7 @@ import "@styles/global.css"
 import Nav from "@components/Nav";
 
 
+
 export const metadata = {
     title: "Fleuve",
     description: "Mind mapping tool: A body of water that reaches the sea"
