@@ -7,6 +7,7 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import { Slant as Hamburger } from "hamburger-react";
 import Menu from "@components/Menu"
 
+
 const Nav = () => {
 
     const [isOpen, setOpen] = useState(false)
@@ -65,7 +66,9 @@ const Nav = () => {
                 </div>
             </nav>
             {/*Render the menu when the hamburger button is toggled.*/}
-            {isOpen && <Menu />}
+            {isOpen && 
+                <Menu/>
+            }
         </>
     );
 }
