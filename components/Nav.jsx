@@ -64,7 +64,7 @@ const Nav = () => {
                     </div>
                 </div>
             </nav>
-            {/*Render the menu when the hamburger button is toggled*/}
+            {/*Render the menu when the hamburger button is toggled.*/}
             {isOpen && <Menu />}
         </>
     );
