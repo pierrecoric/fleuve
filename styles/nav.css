@@ -77,6 +77,30 @@
     margin-right: 14pt;
 }
 
+.profilePicture {
+    border-radius: 100%;
+    margin-right: 12pt;
+}
+
+#logoBlock{
+    display: none;
+    align-items: center;
+}
+
+@keyframes slowRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotatingLogo {
+    animation: slowRotate 60s linear infinite;
+}
+
+
 /*Media Querries*/
 @media (max-width: 596px) {
     #logoBlock{
@@ -86,3 +110,4 @@
         display: none;
     }   
 }
+
